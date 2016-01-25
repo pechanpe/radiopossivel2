@@ -12,7 +12,7 @@ body {
 html {
     width: 100%;
     height: 100%;
-}
+  }
 
 @media(min-width:767px) {
     .navbar {
@@ -28,7 +28,7 @@ html {
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
@@ -36,25 +36,49 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: #fff;
+    background-image: url(https://media.giphy.com/media/fLmrSdHrOoF4A/giphy.gif);
 }
 
 .about-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #eee url(https://media.giphy.com/media/NkkKrHU2wAin6/giphy.gif);
 }
 
 .services-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: #fff url(https://media.giphy.com/media/NkkKrHU2wAin6/giphy.gif);
+    background-size: contain;
 }
 
 .contact-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #eee url(https://media.giphy.com/media/NkkKrHU2wAin6/giphy.gif);
 }
+@font-face {
+  font-family: 'MyFirstFont';
+
+  src: url('../fonts/amatic.ttf');
+}
+div {
+   font-family: myFirstFont;
+}
+h1 {
+  font-size: 5em;
+  color: #000000;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: transparent;
+    background: #eee url(https://media.giphy.com/media/10mzvEGrnhbcSA/giphy.gif);
+    background-size: contain;
+  }
+  .navbar-default .navbar-nav>.active>a:hover {
+   color: transparent;}
+   .navbar{
+     padding: 0px;
+   }
