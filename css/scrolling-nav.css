@@ -12,7 +12,7 @@ body {
 html {
     width: 100%;
     height: 100%;
-}
+  }
 
 @media(min-width:767px) {
     .navbar {
@@ -28,7 +28,7 @@ html {
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
@@ -36,25 +36,63 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: #fff;
+    background-image: url(https://media.giphy.com/media/fLmrSdHrOoF4A/giphy.gif);
 }
 
 .about-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #eee url(https://media.giphy.com/media/NkkKrHU2wAin6/giphy.gif);
 }
 
 .services-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: #fff url(https://media.giphy.com/media/NkkKrHU2wAin6/giphy.gif);
 }
 
 .contact-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: url('Content/images/planet.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+h1 {
+  font-size: 3em;
+  color: #000000;
+  background-color: white;
+}
+.carousel { z-index: -99; } /* keeps this behind all content */
+.carousel .item {
+    position: fixed;
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+.carousel .one {
+    background: url(https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xtp1/v/t1.0-9/1935606_10153943522261458_3625397578523869839_n.jpg?oh=abebac18e931fc08b3f1e61dc8582b10&oe=57358FDD&__gda__=1462664443_dcc339f84164fd21fdb346c84fa0a859);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background: url(https://scontent-gru2-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/12548948_10153943522396458_5752077602748592398_n.jpg?oh=cb0e98becc11226ee1e43de658a1c18c&oe=56FBEA62);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background: url(assets/img/slide1blur.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
 }
