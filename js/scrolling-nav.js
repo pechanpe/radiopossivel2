@@ -17,8 +17,20 @@ $(function() {
         event.preventDefault();
     });
 });
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.carousel').carousel({interval: 7000});
-  });
-</script>
+$( "#slider-range" ).slider({
+
+    	range: true,
+    	min: 0,
+    	max: 500,
+    	values: [ 75, 300 ],
+
+    });
+
+    $( "#slider-default" ).slider({
+
+    		value: 70,
+    		orientation: "horizontal",
+    		range: "min",
+    		animate: true
+
+    });
